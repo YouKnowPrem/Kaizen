@@ -558,7 +558,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
     <div ref={container} className="fixed inset-0 z-[100] bg-navy flex flex-col items-center justify-center pointer-events-none">
       <div className="flex flex-col items-center max-w-sm w-full px-6 text-center">
         <img 
-          src="/logo.png" 
+          src="/Kaizen-removebg-preview.png" 
           alt="Kaizen Logo" 
           className="loading-logo w-32 h-32 md:w-48 md:h-48 mb-6 object-contain drop-shadow-[0_0_15px_rgba(197,160,89,0.5)]"
         />
