@@ -351,28 +351,28 @@ const KaizenMethod = () => {
 const Team = () => {
   const team = [
     { 
-      name: "Founder Name", 
-      role: "Visionary & Lead Mentor", 
+      name: "AARUSH ARYA", 
+      role: "FOUNDER and PRESIDENT", 
       philosophy: "Empowering students to lead with empathy.", 
       icon: <Brain size={48} className="text-gold" />,
       tag: "Main Character",
       emoji: "✨"
     },
     { 
-      name: "Core Member", 
-      role: "Innovation Strategist", 
+      name: "Shobha Prajapati", 
+      role: "General Manager (Creation and Design)", 
       philosophy: "Ideas are cheap, execution is everything.", 
       icon: <Zap size={48} className="text-gold" />,
-      tag: "Let 'em Cook",
-      emoji: "🔥"
-    },
-    { 
-      name: "Core Member", 
-      role: "Program Director", 
-      philosophy: "Learning should be an adventure, not a chore.", 
-      icon: <Rocket size={48} className="text-gold" />,
       tag: "Big Brains",
       emoji: "🧠"
+    },
+    { 
+      name: "Prem Singh", 
+      role: "General Manager (Web and IT)", 
+      philosophy: "Learning should be an adventure, not a chore.", 
+      icon: <Rocket size={48} className="text-gold" />,
+      tag: "Let 'em Cook",
+      emoji: "🔥"
     }
   ];
 
