@@ -351,8 +351,8 @@ const KaizenMethod = () => {
 const Team = () => {
   const team = [
     { 
-      name: "AARUSH ARYA", 
-      role: "FOUNDER and PRESIDENT", 
+      name: "Aarush Arya", 
+      role: "Founder and President", 
       philosophy: "Empowering students to lead with empathy.", 
       icon: <Brain size={48} className="text-gold" />,
       tag: "Main Character",
