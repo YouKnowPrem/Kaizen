@@ -357,25 +357,55 @@ const Impact = () => {
     { value: "20+", label: "National Awards" },
     { value: "3+", label: "Intl. Business Award" },
     { value: "3+", label: "Intl. Innovation Award" },
-    { value: "GoI, MoEdu", label: "Funds Granted By" }
+    { isFunds: true, text: "Funds Granted by GoI, MoEdu" }
   ];
 
   return (
-    <section className="section-cream">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
+    <section className="section-cream relative overflow-hidden py-24 md:py-32">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-navy/5 rounded-full blur-[100px] pointer-events-none" />
+      
+      <div className="max-w-7xl mx-auto relative z-10 px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-6xl font-bold text-navy mb-4">Our Impact</h2>
+          <div className="w-24 h-1 bg-gold mx-auto rounded-full opacity-50" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {stats.map((s, i) => (
-            <div key={i} className="text-center">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                className="text-4xl md:text-5xl lg:text-5xl font-bold text-navy mb-2"
-              >
-                {s.value}
-              </motion.div>
-              <p className="text-gold font-bold uppercase tracking-widest text-xs">{s.label}</p>
-            </div>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: i * 0.1, type: "spring", stiffness: 100 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="bg-white/80 backdrop-blur-xl p-8 rounded-[32px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-white flex flex-col items-center justify-center text-center group cursor-default min-h-[220px]"
+            >
+              {s.isFunds ? (
+                <div className="flex flex-col items-center justify-center h-full space-y-4">
+                  <div className="w-16 h-16 rounded-full bg-gold/10 text-gold flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <Award size={32} />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-navy leading-tight">Funds Granted by</h3>
+                  <p className="text-gold font-bold tracking-widest uppercase text-xs">GoI, MoEdu</p>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full w-full">
+                  <h3 className="text-5xl lg:text-6xl font-black text-navy mb-6 group-hover:text-gold transition-colors duration-300">
+                    {s.value}
+                  </h3>
+                  <p className="text-navy/60 font-bold uppercase tracking-widest text-xs leading-relaxed max-w-[150px]">
+                    {s.label}
+                  </p>
+                </div>
+              )}
+            </motion.div>
           ))}
         </div>
       </div>
