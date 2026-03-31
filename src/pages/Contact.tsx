@@ -19,7 +19,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="glass p-10 md:p-16 rounded-[40px] max-w-2xl w-full relative overflow-hidden border border-gold/10"
+        className="glass p-6 md:p-16 rounded-3xl md:rounded-[40px] max-w-2xl w-full relative overflow-hidden border border-gold/10"
       >
         <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-gold/5 via-transparent to-transparent opacity-50 pointer-events-none" />
         
@@ -30,46 +30,46 @@ const Contact = () => {
             <p className="text-cream/60">We'd love to hear from you. Reach out via email or phone.</p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <motion.a 
-              href="mailto:hello@kaizen.edu"
+              href="mailto:thekaizenquestofficial@gmail.com"
               whileHover={{ x: 10 }}
-              className="flex items-center gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
+              className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
             >
-              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform flex-shrink-0">
                 <Mail size={28} />
               </div>
               <div>
                 <p className="text-sm font-medium text-cream/50 uppercase tracking-widest mb-1">Email</p>
-                <p className="text-xl font-bold text-white">hello@kaizen.edu</p> // Replace with actual email
+                <p className="text-lg md:text-xl font-bold text-white max-w-full break-all">thekaizenquestofficial@gmail.com</p>
               </div>
             </motion.a>
 
             <motion.a 
               href="tel:+919876543210"
               whileHover={{ x: 10 }}
-              className="flex items-center gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
+              className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
             >
-              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform flex-shrink-0">
                 <Phone size={28} />
               </div>
               <div>
                 <p className="text-sm font-medium text-cream/50 uppercase tracking-widest mb-1">Phone 1</p>
-                <p className="text-xl font-bold text-white">+91 98765 43210</p>
+                <p className="text-lg md:text-xl font-bold text-white">+91 98765 43210</p>
               </div>
             </motion.a>
 
             <motion.a 
               href="tel:+918765432109"
               whileHover={{ x: 10 }}
-              className="flex items-center gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
+              className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 p-6 rounded-2xl bg-navy/40 border border-transparent hover:border-gold/20 hover:bg-navy/70 transition-all cursor-pointer group"
             >
-              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform flex-shrink-0">
                 <Phone size={28} />
               </div>
               <div>
                 <p className="text-sm font-medium text-cream/50 uppercase tracking-widest mb-1">Phone 2</p>
-                <p className="text-xl font-bold text-white">+91 87654 32109</p>
+                <p className="text-lg md:text-xl font-bold text-white">+91 87654 32109</p>
               </div>
             </motion.a>
           </div>
