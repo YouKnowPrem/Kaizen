@@ -422,7 +422,6 @@ const FinalCTA = () => {
         <div className="flex flex-col md:flex-row gap-6 justify-center mt-12 w-full max-w-2xl mx-auto">
           <Link to="/individual-mentorship" className="btn-primary text-xl px-12 py-5 flex items-center justify-center">Enroll Now</Link>
           <Link to="/contact" className="btn-secondary text-xl px-12 py-5 flex items-center justify-center">Partner With Us</Link>
-          <Link to="/contact" className="btn-secondary text-xl px-12 py-5 flex items-center justify-center">Contact Us</Link>
         </div>
       </div>
     </section>
