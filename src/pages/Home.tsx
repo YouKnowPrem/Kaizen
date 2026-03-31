@@ -7,6 +7,7 @@ import {
   ArrowRight, Brain, Rocket, BookOpen, School, Users,
   Zap, Award, CheckCircle2, ChevronRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,12 +45,12 @@ const Hero = () => {
           A world's first student led innovation and entrepreneurship ecosystem shaping future problem-solvers.
         </p>
         <div className="hero-text flex flex-col md:flex-row gap-4 justify-center">
-          <button className="btn-primary flex items-center justify-center gap-2">
+          <Link to="/individual-mentorship" className="btn-primary flex items-center justify-center gap-2">
             Enroll Now <ArrowRight size={20} />
-          </button>
-          <button className="btn-secondary">
+          </Link>
+          <Link to="/schools" className="btn-secondary flex items-center justify-center">
             Explore Programs
-          </button>
+          </Link>
         </div>
       </motion.div>
 
@@ -107,15 +108,17 @@ const About = () => {
         >
           Kaizen is an innovation-first learning platform where students don’t just learn concepts — they build, test, and think like real-world innovators.
         </motion.p>
-        <motion.button
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="flex items-center gap-2 mx-auto text-gold font-bold text-lg hover:underline"
-        >
-          Learn Our Philosophy <ChevronRight size={20} />
-        </motion.button>
+        <Link to="/vision" className="inline-block">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-row items-center gap-2 mx-auto text-gold font-bold text-lg hover:underline"
+          >
+            Learn Our Philosophy <ChevronRight size={20} />
+          </motion.div>
+        </Link>
       </div>
     </section>
   );
@@ -150,9 +153,9 @@ const Programs = () => {
               <div className="text-gold mb-6 group-hover:scale-110 transition-transform duration-300">{p.icon}</div>
               <h3 className="text-2xl font-bold mb-4">{p.title}</h3>
               <p className="text-cream/70 mb-8 leading-relaxed">{p.desc}</p>
-              <button className="flex items-center gap-2 text-gold font-semibold group-hover:gap-4 transition-all">
+              <Link to="/schools" className="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-4 transition-all">
                 Know more <ArrowRight size={18} />
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -351,26 +354,27 @@ const Team = () => {
 const Impact = () => {
   const stats = [
     { value: "1000+", label: "Students Mentored" },
-    { value: "50+", label: "Workshops Conducted" },
     { value: "20+", label: "National Awards" },
-    { value: "10+", label: "Innovation Awards" }
+    { value: "3+", label: "Intl. Business Award" },
+    { value: "3+", label: "Intl. Innovation Award" },
+    { value: "GoI, MoEdu", label: "Funds Granted By" }
   ];
 
   return (
     <section className="section-cream">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
           {stats.map((s, i) => (
             <div key={i} className="text-center">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-5xl md:text-7xl font-bold text-navy mb-2"
+                className="text-4xl md:text-5xl lg:text-5xl font-bold text-navy mb-2"
               >
                 {s.value}
               </motion.div>
-              <p className="text-gold font-bold uppercase tracking-widest text-sm">{s.label}</p>
+              <p className="text-gold font-bold uppercase tracking-widest text-xs">{s.label}</p>
             </div>
           ))}
         </div>
@@ -385,10 +389,10 @@ const FinalCTA = () => {
       <div className="absolute inset-0 bg-gold/5 animate-pulse" />
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-4xl sm:text-5xl md:text-8xl font-bold mb-8 tracking-tighter">Ready to Build, Not Just Learn?</h2>
-        <div className="flex flex-col md:flex-row gap-6 justify-center mt-12">
-          <button className="btn-primary text-xl px-12 py-5">Enroll Now</button>
-          <button className="btn-secondary text-xl px-12 py-5">Partner With Us</button>
-          <button className="btn-secondary text-xl px-12 py-5">Contact Us</button>
+        <div className="flex flex-col md:flex-row gap-6 justify-center mt-12 w-full max-w-2xl mx-auto">
+          <Link to="/individual-mentorship" className="btn-primary text-xl px-12 py-5 flex items-center justify-center">Enroll Now</Link>
+          <Link to="/contact" className="btn-secondary text-xl px-12 py-5 flex items-center justify-center">Partner With Us</Link>
+          <Link to="/contact" className="btn-secondary text-xl px-12 py-5 flex items-center justify-center">Contact Us</Link>
         </div>
       </div>
     </section>
