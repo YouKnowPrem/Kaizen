@@ -31,9 +31,9 @@ const Navbar = () => {
             {item.name}
           </Link>
         ))}
-        <button className="px-6 py-2 bg-gold text-navy rounded-full font-bold hover:scale-105 transition-transform duration-300">
+        <Link to="/individual-mentorship" className="px-6 py-2 bg-gold text-navy rounded-full font-bold hover:scale-105 transition-transform duration-300">
           Enroll Now
-        </button>
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -60,9 +60,9 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="px-8 py-3 bg-gold text-navy rounded-full font-bold">
+            <Link to="/individual-mentorship" onClick={() => setIsOpen(false)} className="px-8 py-3 bg-gold text-navy rounded-full font-bold">
               Enroll Now
-            </button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
