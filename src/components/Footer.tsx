@@ -31,7 +31,7 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-bold mb-6">Contact Info</h4>
           <ul className="space-y-4 text-cream/60">
-            <li className="flex items-center gap-3"><Mail size={18} className="text-gold" /> ####</li>
+            <li className="flex items-center gap-3 break-all"><Mail size={18} className="text-gold flex-shrink-0" /> thekaizenquestofficial@gmail.com</li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-gold" /> +91 ###</li>
             <li className="flex items-center gap-3"><MapPin size={18} className="text-gold" /> Innovation Hub ###</li>
           </ul>
