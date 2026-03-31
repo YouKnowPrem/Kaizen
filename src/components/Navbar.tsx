@@ -9,10 +9,10 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Vision', path: '/vision' },
-    { name: 'Team', path: '/team' },
-    { name: 'Schools', path: '/schools' },
-    { name: 'Individual', path: '/individual-mentorship' },
+    { name: 'Our Vision', path: '/vision' },
+    { name: 'Our Team', path: '/team' },
+    { name: 'For Schools & Institutions', path: '/schools' },
+    { name: 'For Individuals', path: '/individual-mentorship' },
     { name: 'Contact Us', path: '/contact' }
   ];
 
