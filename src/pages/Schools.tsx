@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Schools = () => {
   const programs = [
@@ -53,15 +54,15 @@ const Schools = () => {
             </div>
 
             {/* Content Section */}
-            <div className="p-10 flex flex-col flex-grow">
-              <h3 className="text-3xl font-bold mb-4 text-white group-hover:text-gold transition-colors">{p.title}</h3>
-              <p className="text-lg text-cream/70 leading-relaxed flex-grow mb-10">
+            <div className="p-6 md:p-10 flex flex-col flex-grow">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-gold transition-colors">{p.title}</h3>
+              <p className="text-base md:text-lg text-cream/70 leading-relaxed flex-grow mb-8 md:mb-10">
                 {p.description}
               </p>
               
-              <button className="self-start flex items-center gap-2 text-gold font-bold px-6 py-3 border border-gold/20 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">
+              <Link to="/contact" className="self-start flex items-center gap-2 text-gold font-bold px-6 py-3 border border-gold/20 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">
                 Know More <ArrowRight size={20} />
-              </button>
+              </Link>
             </div>
           </motion.div>
         ))}
