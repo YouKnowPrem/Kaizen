@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Compass, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Individual = () => {
   return (
@@ -19,7 +20,7 @@ const Individual = () => {
         initial={{ opacity: 0, y: 50, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="glass p-10 md:p-16 rounded-[40px] max-w-3xl w-full text-center relative overflow-hidden group border border-gold/10 hover:border-gold/30 transition-all shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
+        className="glass p-8 md:p-16 rounded-3xl md:rounded-[40px] max-w-3xl w-full text-center relative overflow-hidden group border border-gold/10 hover:border-gold/30 transition-all shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
       >
         <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-3xl group-hover:bg-gold/10 transition-colors" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 blur-3xl" />
@@ -35,9 +36,9 @@ const Individual = () => {
             "Our 1:1 mentorship program is made to develop the necessary skills that are a must in modern-day entrepreneurs."
           </p>
           
-          <button className="flex items-center gap-3 bg-gold text-navy px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)]">
+          <Link to="/contact" className="flex items-center gap-3 bg-gold text-navy px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)]">
             Apply Now <ArrowRight size={24} />
-          </button>
+          </Link>
         </div>
       </motion.div>
     </div>
