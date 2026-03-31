@@ -285,7 +285,7 @@ const Team = () => {
       emoji: "✨"
     },
     { 
-      name: "Shobha Prajapati", 
+      name: "###", 
       role: "General Manager (Creation and Design)", 
       philosophy: "Ideas are cheap, execution is everything.", 
       icon: <Zap size={48} className="text-gold" />,
@@ -297,7 +297,7 @@ const Team = () => {
       role: "General Manager (Web and IT)", 
       philosophy: "Learning should be an adventure, not a chore.", 
       icon: <Rocket size={48} className="text-gold" />,
-      tag: "Let 'em Cook",
+      tag: "Let me Cook!",
       emoji: "🔥"
     }
   ];
@@ -352,7 +352,7 @@ const Impact = () => {
   const stats = [
     { value: "1000+", label: "Students Mentored" },
     { value: "50+", label: "Workshops Conducted" },
-    { value: "20+", label: "Partner Schools" },
+    { value: "20+", label: "National Awards" },
     { value: "10+", label: "Innovation Awards" }
   ];
 
