@@ -12,7 +12,7 @@ const Team = () => {
       emoji: "✨"
     },
     { 
-      name: "Shobha Prajapati", 
+      name: "###", 
       role: "General Manager (Creation and Design)", 
       icon: <Zap size={48} className="text-gold" />,
       tag: "Big Brains",
@@ -112,7 +112,7 @@ const Team = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-cream mb-4"
           >
-            Our Mentors
+            Our Mentors & Advisors
           </motion.h2>
           <p className="text-xl text-cream/60 max-w-2xl mx-auto">
             Industry experts guiding the next generation of innovators.
