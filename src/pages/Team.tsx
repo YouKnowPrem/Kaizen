@@ -7,7 +7,7 @@ const Team = () => {
     { 
       name: "Aarush Arya", 
       role: "Founder and President", 
-      image: "/Aarush_g.avif",
+      image: "public/Aarush_g.avif",
       icon: <Brain size={48} className="text-gold" />,
       tag: "Main Character",
       emoji: "✨"
