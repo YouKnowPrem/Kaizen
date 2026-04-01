@@ -7,12 +7,13 @@ const Team = () => {
     { 
       name: "Aarush Arya", 
       role: "Founder and President", 
+      image: "/Aarush_g.avif",
       icon: <Brain size={48} className="text-gold" />,
       tag: "Main Character",
       emoji: "✨"
     },
     { 
-      name: "###", 
+      name: "Shobha Prajapati", 
       role: "General Manager (Creation and Design)", 
       icon: <Zap size={48} className="text-gold" />,
       tag: "Big Brains",
@@ -21,6 +22,7 @@ const Team = () => {
     { 
       name: "Prem Singh", 
       role: "General Manager (Web and IT)", 
+      image: "/Prem_singh.avif",
       icon: <Rocket size={48} className="text-gold" />,
       tag: "Let 'em Cook",
       emoji: "🔥"
@@ -71,10 +73,14 @@ const Team = () => {
             >
               <div className="relative w-40 h-40 mx-auto mb-10">
                 <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] animate-[spin_10s_linear_infinite]" />
-                <div className="absolute inset-1 bg-navy rounded-[40%_60%_70%_30%/40%_50%_60%_50%] flex items-center justify-center animate-[spin_10s_linear_infinite_reverse]">
-                  <div className="animate-[spin_10s_linear_infinite]">
-                    {t.icon}
-                  </div>
+                <div className="absolute inset-1 bg-navy rounded-[40%_60%_70%_30%/40%_50%_60%_50%] flex items-center justify-center overflow-hidden border border-navy shadow-[inset_0_0_10px_rgba(0,0,0,0.5)]">
+                  {t.image ? (
+                    <img src={t.image} alt={t.name} className="w-full h-full object-cover animate-[anti_spin_10s_linear_infinite]" style={{ animationDirection: 'reverse' }} />
+                  ) : (
+                    <div className="animate-[spin_10s_linear_infinite_reverse]">
+                      {t.icon}
+                    </div>
+                  )}
                 </div>
                 
                 <motion.div 
@@ -101,10 +107,10 @@ const Team = () => {
       </section>
 
       {/* Deep Divider */}
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-32" />
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-20 md:mb-32" />
 
       {/* Mentors Section */}
-      <section className="max-w-7xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0 }}
@@ -112,7 +118,7 @@ const Team = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-cream mb-4"
           >
-            Our Mentors & Advisors
+            Our Mentors
           </motion.h2>
           <p className="text-xl text-cream/60 max-w-2xl mx-auto">
             Industry experts guiding the next generation of innovators.
@@ -147,3 +153,4 @@ const Team = () => {
 };
 
 export default Team;
+
