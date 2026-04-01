@@ -357,7 +357,7 @@ const Impact = () => {
     { value: "20+", label: "National Awards" },
     { value: "3+", label: "Intl. Business Award" },
     { value: "3+", label: "Intl. Innovation Award" },
-    { isFunds: true, text: "Funds Granted by GoI, MoEdu" }
+    { isFunds: true, text: "Funds Granted by Govt. Of India, MoE" }
   ];
 
   return (
