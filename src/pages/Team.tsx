@@ -22,7 +22,7 @@ const Team = () => {
     { 
       name: "Prem Singh", 
       role: "General Manager (Web and IT)", 
-      image: "/Prem_singh.avif",
+      image: "public/Prem_singh.avif",
       icon: <Rocket size={48} className="text-gold" />,
       tag: "Let 'em Cook",
       emoji: "🔥"
