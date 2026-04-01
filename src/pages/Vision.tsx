@@ -45,13 +45,13 @@ const Vision = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative mx-auto w-full max-w-md aspect-square"
+            className="relative mx-auto w-64 h-64 md:w-full md:h-auto max-w-md aspect-square"
           >
             {/* Liquid glass aesthetic frame */}
             <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-[spin_15s_linear_infinite] blur-md opacity-50" />
             <div className="absolute inset-2 overflow-hidden rounded-[30%_70%_70%_30%/30%_30%_70%_70%] border-4 border-navy shadow-[0_0_30px_rgba(197,160,89,0.3)]">
               <img 
-                src="/Aarush_G.jpeg" 
+                src="/Aarush_g.avif" 
                 alt="Aarush G - Founder"
                 className="w-full h-full object-cover"
               />
@@ -66,7 +66,6 @@ const Vision = () => {
           >
             <h3 className="text-3xl font-bold mb-2">Aarush Arya</h3>
             <p className="text-gold font-medium mb-8 text-lg">Founder & President</p>
-            <h5 className="text-gold font-medium mb-8 text-lg">15 TIMES IIT INVITEE</h5>
             <p className="text-lg text-cream/80 leading-relaxed mb-6">
               When we started Kaizen, the goal wasn't just to teach students how to start businesses. The goal was to fundamentally shift how students think about the problems around them.
             </p>
