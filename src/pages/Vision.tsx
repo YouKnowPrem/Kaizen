@@ -66,7 +66,7 @@ const Vision = () => {
           >
             <h3 className="text-3xl font-bold mb-2">Aarush Arya</h3>
             <p className="text-gold font-medium mb-8 text-lg">Founder & President</p>
-            <p className="text-gold font-medium mb-8 text-lg">15 TIMES IIT INVITEE<p>
+            <p className="text-gold font-medium mb-8 text-lg">15 TIMES IIT INVITEE</p>
             <p className="text-lg text-cream/80 leading-relaxed mb-6">
               When we started Kaizen, the goal wasn't just to teach students how to start businesses. The goal was to fundamentally shift how students think about the problems around them.
             </p>
