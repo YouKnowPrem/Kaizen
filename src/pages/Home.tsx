@@ -282,6 +282,7 @@ const Team = () => {
     { 
       name: "Aarush Arya", 
       role: "Founder and President", 
+      image: "/Aarush_g.avif",
       philosophy: "Empowering students to lead with empathy.", 
       icon: <Brain size={48} className="text-gold" />,
       tag: "Main Character",
@@ -298,6 +299,7 @@ const Team = () => {
     { 
       name: "Prem Singh", 
       role: "General Manager (Web and IT)", 
+      image: "/Prem_singh.avif",
       philosophy: "Learning should be an adventure, not a chore.", 
       icon: <Rocket size={48} className="text-gold" />,
       tag: "Let me Cook!",
@@ -317,11 +319,15 @@ const Team = () => {
               className="text-center p-8 glass rounded-3xl relative group"
             >
               <div className="relative w-36 h-36 mx-auto mb-10">
-                <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] animate-[spin_10s_linear_infinite]" />
-                <div className="absolute inset-1 bg-navy rounded-[40%_60%_70%_30%/40%_50%_60%_50%] flex items-center justify-center animate-[spin_10s_linear_infinite_reverse]">
-                  <div className="animate-[spin_10s_linear_infinite]">
-                    {t.icon}
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-3xl" />
+                <div className="absolute inset-1 bg-navy rounded-3xl flex items-center justify-center overflow-hidden border border-navy shadow-[inset_0_0_10px_rgba(0,0,0,0.5)]">
+                  {t.image ? (
+                    <img src={t.image} alt={t.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <div>
+                      {t.icon}
+                    </div>
+                  )}
                 </div>
                 
                 <motion.div 
