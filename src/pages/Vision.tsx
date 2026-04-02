@@ -48,10 +48,10 @@ const Vision = () => {
             className="relative mx-auto w-64 h-64 md:w-full md:h-auto max-w-md aspect-square"
           >
             {/* Liquid glass aesthetic frame */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-[spin_15s_linear_infinite] blur-md opacity-50" />
-            <div className="absolute inset-2 overflow-hidden rounded-[30%_70%_70%_30%/30%_30%_70%_70%] border-4 border-navy shadow-[0_0_30px_rgba(197,160,89,0.3)]">
+            <div className="absolute inset-0 bg-gradient-to-tr from-gold to-gold/10 rounded-3xl blur-md opacity-50" />
+            <div className="absolute inset-2 overflow-hidden rounded-3xl border-4 border-navy shadow-[0_0_30px_rgba(197,160,89,0.3)]">
               <img 
-                src="public/Aarush_g.avif" 
+                src="/Aarush_g.avif" 
                 alt="Aarush G - Founder"
                 className="w-full h-full object-cover"
               />
