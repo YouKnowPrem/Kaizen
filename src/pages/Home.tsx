@@ -283,26 +283,24 @@ const Team = () => {
       name: "Aarush Arya", 
       role: "Founder and President", 
       image: "/Aarush_g.avif",
-      philosophy: "Empowering students to lead with empathy.", 
+      philosophy: "नभः स्पृशं दीप्तम्", 
       icon: <Brain size={48} className="text-gold" />,
-      tag: "Main Character",
       emoji: "✨"
     },
     { 
-      name: "###", 
+      name: "Sarvi Sharma", 
       role: "General Manager (Creation and Design)", 
+      image: "/Sarvi.avif",
       philosophy: "Ideas are cheap, execution is everything.", 
       icon: <Zap size={48} className="text-gold" />,
-      tag: "Big Brains",
-      emoji: "🧠"
+      emoji: "🖌️"
     },
     { 
       name: "Prem Singh", 
-      role: "General Manager (Web and IT)", 
+      role: "Chief Technology Officer (CTO)", 
       image: "/Prem_singh.avif",
-      philosophy: "Learning should be an adventure, not a chore.", 
+      philosophy: "वीर भोग्य वसुंधरा", 
       icon: <Rocket size={48} className="text-gold" />,
-      tag: "Let me Cook!",
       emoji: "🔥"
     }
   ];
