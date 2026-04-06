@@ -9,22 +9,19 @@ const Team = () => {
       role: "Founder and President", 
       image: "/Aarush_g.avif",
       icon: <Brain size={48} className="text-gold" />,
-      tag: "Main Character",
       emoji: "✨"
     },
     { 
-      name: "Shobha Prajapati", 
+      name: "Sarvi Sharma", 
       role: "General Manager (Creation and Design)", 
       icon: <Zap size={48} className="text-gold" />,
-      tag: "Big Brains",
-      emoji: "🧠"
+      emoji: "🖌️"
     },
     { 
       name: "Prem Singh", 
-      role: "General Manager (Web and IT)", 
+      role: "Chief Technology Officer (CTO)", 
       image: "/Prem_singh.avif",
       icon: <Rocket size={48} className="text-gold" />,
-      tag: "Let 'em Cook",
       emoji: "🔥"
     }
   ];
